@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<main aria-labelledby="title">
+    <form action="/Home/ReceiveData" method="post">
+        <label for="id">id:</label>
+        <input type="number" name="id" id="id" />
+        <br /><br />
+        <label for="Name">Name:</label>
+        <input type="text" name="Name" id="Name" />
+        <br /><br />
+        <label for="gender">gender:</label>
+        <input type="radio" name="gender" id="gender1" value="female" />female
+        <input type="radio" name="gender" id="gender2" value="male" />male
+        <br /><br />
+        <label for="coures">coures:</label>
+        <input type="checkbox" name="coures" id="java" value="java" />java
+        <input type="checkbox" name="coures" id="python" value="python" />python
+        <input type="checkbox" name="coures" id="C#" value="C#" />C#
+        <input type="checkbox" name="coures" id="C++" value="C++" />C++
+        <br /><br />
+        <label for="Cities">Cities</label>
+        <select name="Cities" id="Cities">
+            <option value="Ajloun" >Ajloun</option>
+            <option value="Irbid" >Irbid</option>
+            <option value="amman" >amman</option>
+            <option value="Salt" >Salt</option>
+            <option value="Ramtha" >Ramtha</option>
+
+        </select>
+        <br /><br />
+        <input type="submit" value="Submit" />
+    </form>
+</main>
